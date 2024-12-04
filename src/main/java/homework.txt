@@ -1,0 +1,22 @@
+
+8)  Creare MerchCOntroller, mappandolo a /merch, con 2 metodi, un GET che mandi come model la lista con tutti i merch alla pagina
+di tutti i merch e un POST che con @ModelAttribute e @RequestParam (id_seller) prenda i dati della form e inserisca un nuovo merch
+9) ora ci divertiamo, implementando tramite js la scelta dell'id del seller in maniera molto più carina e mettendo un filtro
+    per i merch
+
+
+
+MODEL
+
+SELLER (venditore)
+-id
+-username
+-address
+-merchList (lista di merch)
+
+MERCH (item in vendita)
+-id
+-name
+-type
+-cost
+-seller (riferimento padre)

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sellers</title>
+</head>
+<body>
+<h2>Lista Seller</h2>
+<div th:each="seller : ${seller}">
+  <span th:text="${seller.username}"></span>
+  <span th:text="${seller.address}"></span>
+</div>
+
+
+<h2>Form Seller</h2>
+<form action="seller" method="POST">
+  <input type="text" name="username" placeholder="Username" /><br/><br/>
+  <input type="text" name="address" placeholder="Indirizzo" /><br/><br/>
+  <input type="submit" value="Inserisci Seller" />
+</form>
+
+
+
+
+
+<br/>
+<a href="../">Home</a>
+
+</body>
+</html>
